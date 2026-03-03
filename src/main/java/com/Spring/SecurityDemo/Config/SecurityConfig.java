@@ -26,6 +26,7 @@ public class SecurityConfig {
 
     }
     // UserDetailsService is used for multiple user....
+    @Bean
     public UserDetailsService userDetailsService(){
         return new InMemoryUserDetailsManager();
     }
